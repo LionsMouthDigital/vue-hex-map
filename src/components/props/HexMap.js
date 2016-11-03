@@ -1,8 +1,10 @@
 export default {
-  accessToken: String,
+  accessToken: {
+    type:     String,
+    required: true,
+  },
 
-
-  // [Map options](https://www.mapbox.com/mapbox-gl-js/api/#Map).
+  // [Mapbox Map object options](https://www.mapbox.com/mapbox-gl-js/api/#Map).
   attributionControl: {
     type:    Boolean,
     default: true,
