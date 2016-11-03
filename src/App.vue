@@ -4,14 +4,26 @@
       access-token = "pk.eyJ1IjoiY3VydGlzYmxhY2t3ZWxsIiwiYSI6ImNpdXlibnY1eTA0bW4yb24wNjh5Y2pkOWsifQ.4EEQwMrBd06fiFZshvfcug"
       style        = "mapbox://styles/curtisblackwell/ciuy9b96k00gb2js5em4uhnoa"
     >
-      <hex-map-source id="points">
-        <hex-map-marker
-          :coords = "[-96.7984907,32.7789228]"
-          icon    = "suitcase"
-          label   = "LionsMouth Digital"
-          :properties  = "{'Web Design': true, color: 'blue'}"
-        ></hex-map-marker>
+      <hex-map-custom-marker
+        :coords        = "[-96.8005178, 32.7838303]"
+        icon           = "suitcase"
+        label          = "LionsMouth Digital"
+        :properties    = "{'Web Design': true, color: 'blue'}"
+        :options       = "{offset: [-40, -15]}"
+        :el-properties = "{
+          className: 'marker',
+          style: {
+            backgroundImage:    'url(/assets/LMD-mark-gold.png)',
+            backgroundPosition: 'bottom center',
+            backgroundRepeat:   'no-repeat',
+            backgroundSize:     'contain',
+            width:              '30px',
+            height:             '40px',
+          },
+        }"
+      ></hex-map-custom-marker>
 
+      <hex-map-source id="points">
         <hex-map-marker
           :lat    = "32.7496336"
           :long   = "-96.8351809"

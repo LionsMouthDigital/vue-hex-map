@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <!-- Don't show a DOM element. -->
+  <div v-show="false">
     <slot></slot>
   </div>
 </template>

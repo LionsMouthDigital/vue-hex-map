@@ -41,6 +41,13 @@
          * @type {Array}
          */
         layers: [],
+
+        /**
+         * Marker objects.
+         *
+         * @type {Array}
+         */
+        markers: [],
       };
     },
 
@@ -76,6 +83,18 @@
           });
         });
       },
+
+
+      /**
+       * Loop through all markers and add them to the map.
+       *
+       * @author Curtis Blackwell
+       */
+      addMarkers() {
+        _.forEach(this.markers, (marker) => {
+          marker.addTo(this.map);
+        });
+      },
     },
 
 
@@ -99,6 +118,7 @@
       this.map.on('style.load', () => {
         this.addSources();
         this.addLayers();
+        this.addMarkers();
       });
     },
   }
