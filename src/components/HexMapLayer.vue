@@ -1,7 +1,6 @@
 <template>
-  <div>
-    <slot></slot>
-  </div>
+  <!-- Don't render anything. -->
+  <div v-if="false"></div>
 </template>
 
 <script>
