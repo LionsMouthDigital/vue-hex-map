@@ -6,9 +6,19 @@
 
     mixins: [HexMapMarker],
 
-    mounted() {
-      // Add this marker to the parent HexMapSource.
-      this.$parent.features.push(this.data);
+    watch: {
+      data: {
+        /**
+         * Push marker data to destination once ready.
+         *
+         * @author Curtis Blackwell
+         */
+        handler() {
+          this.pushData = this.data;
+          this.pushToDestination();
+        },
+        deep: true,
+      },
     },
   };
 </script>

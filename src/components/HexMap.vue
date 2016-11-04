@@ -98,6 +98,20 @@
     },
 
 
+    watch: {
+      /**
+       * Add markers to map if `markers` data changes.
+       *
+       * @author Curtis Blackwell
+       */
+      markers() {
+        _.forEach(this.markers, (marker) => {
+          marker.addTo(this.map);
+        });
+      },
+    },
+
+
     mounted() {
       mapboxgl.accessToken = this.accessToken;
 
@@ -114,7 +128,7 @@
       // Create the map!
       this.map = new mapboxgl.Map(options);
 
-      // Ensure Mapbox is ready, then add sources and layers.
+      // Ensure Mapbox is ready, then add sources, layers, and markers.
       this.map.on('style.load', () => {
         this.addSources();
         this.addLayers();

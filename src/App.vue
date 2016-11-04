@@ -5,7 +5,7 @@
       style        = "mapbox://styles/curtisblackwell/ciuy9b96k00gb2js5em4uhnoa"
     >
       <hex-map-custom-marker
-        :coords        = "[-96.8005178, 32.7838303]"
+        address        = "400 N Ervay, Dallas, TX"
         icon           = "suitcase"
         label          = "LionsMouth Digital"
         :properties    = "{'Web Design': true, color: 'blue'}"
@@ -25,14 +25,12 @@
 
       <hex-map-source id="points">
         <hex-map-marker
-          :lat    = "32.7496336"
-          :long   = "-96.8351809"
+          address = "630 West Davis St, Dallas, TX"
           label   = "The Common Desk"
         ></hex-map-marker>
 
         <hex-map-marker
-          :lat    = "32.7486336"
-          :long   = "-96.8351809"
+          :coords = "[-96.8328177, 32.7493097]"
           icon    = "restaurant"
           label   = "Bolsa Mercado"
         ></hex-map-marker>
