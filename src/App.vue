@@ -9,7 +9,7 @@
         icon           = "suitcase"
         label          = "LionsMouth Digital"
         :properties    = "{'Web Design': true, color: 'blue'}"
-        :options       = "{offset: [-40, -15]}"
+        :options       = "{offset: [-20, -15]}"
         :el-properties = "{
           className: 'marker',
           style: {
