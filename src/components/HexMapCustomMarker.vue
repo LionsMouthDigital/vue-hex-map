@@ -58,7 +58,7 @@
       // Add this marker to the parent HexMap.
       let template       = document.createElement('template');
       template.innerHTML = this.$el.innerHTML || '<div></div>';
-      this.markerEl        = template.content.firstChild;
+      this.markerEl      = template.content.firstChild;
 
       // Add the HTMLElement properties.
       _.forEach(this.elProperties, (value, attr) => {
