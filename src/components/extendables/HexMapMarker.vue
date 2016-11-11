@@ -7,10 +7,11 @@
   import _       from 'lodash';
   import axios   from 'axios';
   import Promise from 'es6-promise';
+  import Vue     from 'vue';
 
   Promise.polyfill();
 
-  export default {
+  export default Vue.extend({
     props: {
       // Coordinates.
       coords:  Array,
@@ -138,5 +139,5 @@
         this.geocode(this.address);
       }
     },
-  };
+  });
 </script>
