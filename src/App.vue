@@ -25,14 +25,14 @@
 
       <hex-map-source id="points">
         <hex-map-marker
-          address = "633 West Davis St, Dallas, TX"
-          label   = "The Common Desk"
+          address = "634 West Davis St, Dallas, TX"
+          icon    = "restaurant"
+          label   = "Bolsa Mercado"
         ></hex-map-marker>
 
         <hex-map-marker
-          :coords = "[-96.8328177, 32.7493097]"
-          icon    = "restaurant"
-          label   = "Bolsa Mercado"
+          :coords = "[-96.833017, 32.749699]"
+          label   = "The Common Desk"
         ></hex-map-marker>
       </hex-map-source>
       <hex-map-layer id="points" source="points"></hex-map-layer>

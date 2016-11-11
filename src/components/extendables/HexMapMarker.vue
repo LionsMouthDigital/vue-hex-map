@@ -16,6 +16,7 @@
       // Coordinates.
       coords:  Array,
       // Address to geocode.
+      // NOTE Using `address` is slower than using `coords`. See this effect in `App.vue`.
       address: String,
 
       // Properties.
