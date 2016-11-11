@@ -25,7 +25,7 @@
 
       <hex-map-source id="points">
         <hex-map-marker
-          address = "630 West Davis St, Dallas, TX"
+          address = "633 West Davis St, Dallas, TX"
           label   = "The Common Desk"
         ></hex-map-marker>
 
