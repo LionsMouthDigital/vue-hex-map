@@ -1,5 +1,6 @@
 {
   "name": "vue-hex-map",
+  "main": "src/HexMap.js",
   "description": "A Vue.js project",
   "author": "Curtis Blackwell <blackwell.curtis@gmail.com>",
   "scripts": {
