@@ -8,8 +8,10 @@
   import _            from 'lodash';
   import HexMapMarker from './extendables/HexMapMarker.vue';
 
-  export default HexMapMarker.extend({
+  export default {
     name: 'HexMapCustomMarker',
+
+    extends: HexMapMarker,
 
     props: {
       // HTMLElement properties for custom markers.
@@ -69,5 +71,5 @@
         }
       });
     },
-  });
+  };
 </script>

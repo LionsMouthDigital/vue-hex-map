@@ -1,8 +1,10 @@
 <script>
   import HexMapMarker from './extendables/HexMapMarker.vue';
 
-  export default HexMapMarker.extend({
+  export default {
     name: 'HexMapMarker',
+
+    extends: HexMapMarker,
 
     watch: {
       data: {
@@ -18,5 +20,5 @@
         deep: true,
       },
     },
-  });
+  };
 </script>
