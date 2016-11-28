@@ -4,6 +4,8 @@ export default {
     required: true,
   },
 
+  controls: Boolean,
+
   // [Mapbox Map object options](https://www.mapbox.com/mapbox-gl-js/api/#Map).
   attributionControl: {
     type:    Boolean,

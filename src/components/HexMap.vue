@@ -95,6 +95,18 @@
           marker.addTo(this.map);
         });
       },
+
+
+      /**
+       * Show navigation controls.
+       *
+       * @author Curtis Blackwell
+       */
+      addNavigationControl() {
+        if (this.controls) {
+          this.map.addControl(new mapboxgl.NavigationControl());
+        }
+      },
     },
 
 
@@ -133,6 +145,7 @@
         this.addSources();
         this.addLayers();
         this.addMarkers();
+        this.addNavigationControl();
       });
     },
   }

@@ -13,6 +13,7 @@
       access-token = "pk.eyJ1IjoiY3VydGlzYmxhY2t3ZWxsIiwiYSI6ImNpdXlibnY1eTA0bW4yb24wNjh5Y2pkOWsifQ.4EEQwMrBd06fiFZshvfcug"
       style        = "mapbox://styles/curtisblackwell/ciuy9b96k00gb2js5em4uhnoa"
       ref          = "map"
+      controls
     >
       <hex-map-custom-marker
         ref            = "lmd"
