@@ -13,6 +13,11 @@
       access-token = "pk.eyJ1IjoiY3VydGlzYmxhY2t3ZWxsIiwiYSI6ImNpdXlibnY1eTA0bW4yb24wNjh5Y2pkOWsifQ.4EEQwMrBd06fiFZshvfcug"
       style        = "mapbox://styles/curtisblackwell/ciuy9b96k00gb2js5em4uhnoa"
       ref          = "map"
+      :zoom        = "{
+        0:   10,
+        600: 12,
+        1200: 13,
+      }"
       controls
     >
       <hex-map-custom-marker

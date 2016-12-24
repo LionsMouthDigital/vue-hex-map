@@ -75,7 +75,7 @@ export default {
     default: true,
   },
   zoom: {
-    type: Number,
+    type: [Number, Object],
     default: 13,
   },
 };
